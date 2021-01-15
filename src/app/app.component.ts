@@ -10,8 +10,7 @@ export class AppComponent {
   tasksDone: Array <string>=[];
 
   add(task: string){
-    this.tasksList.push(this.task);
-    console.log('byłem tutaj w app component w add()'+this.task)
+    this.tasksList.push(task);
   }
   usun(task){
     this.tasksList=this.tasksList.filter(e => e!==task);

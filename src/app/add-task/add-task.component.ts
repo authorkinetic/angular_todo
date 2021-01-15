@@ -16,5 +16,5 @@ export class AddTaskComponent implements OnInit {
     console.log(this.emitTask);
     this.newTask= '';
   }
-
+  ngOnInit(): void {};
 }
