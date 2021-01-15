@@ -1,9 +1,6 @@
 <div>
     <div class="container">
-        <div>
-            <input [(ngModel)]="newTask">
-            <button (click)="add()">Dodaj</button>
-        </div>
+        <app-add-task (emitTask)="add($event)"></app-add-task>
     </div>
     <div class="container">
         <ng-container *ngIf="tasksList.length>0; else noTask">
